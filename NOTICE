@@ -1,0 +1,27 @@
+CCO-VIBE
+Copyright (C) 2024 CCO-VIBE Contributors
+
+This software includes the following third-party components:
+
+1. React
+   Copyright (c) Meta Platforms, Inc. and affiliates.
+   Licensed under the MIT License.
+
+2. TypeScript
+   Copyright (c) Microsoft Corporation.
+   Licensed under the Apache License, Version 2.0.
+
+3. Next.js
+   Copyright (c) 2024 Vercel, Inc.
+   Licensed under the MIT License.
+
+4. Tailwind CSS
+   Copyright (c) Tailwind Labs, Inc.
+   Licensed under the MIT License.
+
+The full text of these licenses can be found in the respective packages' source code or at:
+- MIT License: https://opensource.org/licenses/MIT
+- Apache License 2.0: https://opensource.org/licenses/Apache-2.0
+
+This NOTICE file is provided for informational purposes only and does not modify
+the terms of any license agreement. 
