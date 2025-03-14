@@ -220,3 +220,263 @@ export const Button: React.FC<Props> = ({
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+# Contributing to CCO (Chief Cognitive Officer)
+
+Thank you for your interest in contributing to CCO! This document provides guidelines and instructions for contributing to our project.
+
+## Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). We expect all contributors to help create a positive and inclusive environment.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm 9.x or later
+- Firebase account
+- OpenAI API key
+- Git
+
+### Development Environment Setup
+
+1. **Fork the repository:**
+   
+   Start by forking the repository using the "Fork" button on GitHub.
+
+2. **Clone your fork:**
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/cco-app.git
+   cd cco-app
+   ```
+
+3. **Add the upstream remote:**
+
+   ```bash
+   git remote add upstream https://github.com/cco-vibe/cco-app.git
+   ```
+
+4. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+5. **Set up environment variables:**
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Edit `.env.local` with your API keys and configuration.
+
+6. **Set up Firebase:**
+   
+   Create a Firebase project for development and update `.env.local` with your Firebase configuration.
+
+7. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at [http://localhost:3000](http://localhost:3000).
+
+## Development Workflow
+
+We follow a standard GitHub workflow:
+
+1. **Create a branch:**
+   
+   Create a branch for your feature or bugfix. Use a descriptive name that reflects the changes you're making:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   # or
+   git checkout -b bugfix/issue-description
+   ```
+
+   Follow our [branch naming convention](./docs/DEVELOPMENT_GUIDELINES.md#branch-naming-strategy).
+
+2. **Make your changes:**
+   
+   Implement your changes following our [coding standards](./docs/DEVELOPMENT_GUIDELINES.md#coding-standards).
+
+3. **Write and run tests:**
+
+   Ensure your code has appropriate tests and all tests pass:
+
+   ```bash
+   npm run test
+   ```
+
+4. **Lint your code:**
+
+   Ensure your code follows our linting rules:
+
+   ```bash
+   npm run lint
+   ```
+
+5. **Commit your changes:**
+
+   We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification for commit messages:
+
+   ```bash
+   git commit -m "feat: add user preference settings"
+   # or
+   git commit -m "fix: resolve authentication redirect issue"
+   ```
+
+   For more details, see our [commit message conventions](./docs/DEVELOPMENT_GUIDELINES.md#commit-message-conventions).
+
+6. **Stay updated with upstream:**
+
+   Regularly fetch updates from the upstream repository:
+
+   ```bash
+   git fetch upstream
+   git rebase upstream/main
+   ```
+
+7. **Push your branch:**
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+8. **Create a Pull Request:**
+   
+   Open a pull request from your fork to the main repository. Follow the PR template and provide detailed information about your changes.
+
+## Pull Request Process
+
+1. **Fill out the PR template** with all required information.
+2. **Link any related issues** using keywords like "Fixes #123" or "Relates to #456".
+3. **Ensure all CI checks pass**, including tests, linting, and type checking.
+4. **Request reviews** from appropriate team members.
+5. **Address review feedback** in a timely manner.
+6. **Once approved**, your PR will be merged by a maintainer.
+
+### PR Review Criteria
+
+Pull requests are evaluated based on:
+
+- Code quality and adherence to our [development guidelines](./docs/DEVELOPMENT_GUIDELINES.md)
+- Test coverage and quality
+- Documentation quality
+- Performance impact
+- Accessibility considerations
+- Security implications
+
+## Issue Reporting Guidelines
+
+### Bug Reports
+
+When reporting a bug, please include:
+
+1. **Clear and descriptive title**
+2. **Steps to reproduce the bug**
+3. **Expected behavior**
+4. **Actual behavior**
+5. **Screenshots** if applicable
+6. **Environment information**:
+   - Browser and version
+   - Operating system
+   - Device information
+7. **Additional context** that might be helpful
+
+### Feature Requests
+
+When suggesting a feature, please include:
+
+1. **Clear and descriptive title**
+2. **Detailed description of the proposed feature**
+3. **Use cases** that would benefit from this feature
+4. **Explanation of why it should be added** to the project
+5. **Mock-ups or examples** if applicable
+
+### Using Issue Templates
+
+We provide issue templates for bug reports, feature requests, and other types of issues. Please use the appropriate template when creating a new issue.
+
+## Documentation
+
+Good documentation is essential for our project. When contributing:
+
+1. **Update documentation** related to your changes.
+2. **Document new features** thoroughly.
+3. **Use clear, concise language**.
+4. **Include code examples** where appropriate.
+5. **Update READMEs** if needed.
+
+## Testing
+
+We prioritize testing to maintain code quality:
+
+1. **Write unit tests** for new functionality.
+2. **Write integration tests** for feature interactions.
+3. **Ensure all tests pass** before submitting PRs.
+4. **Maintain or improve test coverage**.
+
+See our [Testing Strategy](./docs/TESTING_STRATEGY.md) for more details.
+
+## Accessibility
+
+Accessibility is a core value of our project:
+
+1. **Ensure all UI components meet WCAG 2.1 AA standards**.
+2. **Test with screen readers** and keyboard navigation.
+3. **Maintain appropriate color contrast**.
+4. **Provide alternative text for images**.
+
+See our [Accessibility Guidelines](./docs/ACCESSIBILITY_GUIDELINES.md) for more information.
+
+## Code Review Process
+
+Our code review process aims to maintain code quality and share knowledge:
+
+1. **Reviews are required** before merging PRs.
+2. **Reviewers should provide constructive feedback**.
+3. **Authors should respond to feedback** in a timely manner.
+4. **Resolve all conversations** before merging.
+5. **Follow our [Code Review Checklist](./docs/CODE_REVIEW_CHECKLIST.md)**.
+
+## Community
+
+Join our community channels to connect with other contributors:
+
+- **Discord**: [Join our server](https://discord.gg/cco-vibe)
+- **Twitter**: [@cco_vibe](https://twitter.com/cco_vibe)
+- **GitHub Discussions**: [cco-vibe/cco-app/discussions](https://github.com/cco-vibe/cco-app/discussions)
+
+## Recognition
+
+We value and recognize all contributors:
+
+- All contributors are listed in our [CONTRIBUTORS.md](CONTRIBUTORS.md) file.
+- Significant contributions are highlighted in release notes.
+- Regular contributors may be invited to join the core team.
+
+## Additional Resources
+
+- [Development Guidelines](./docs/DEVELOPMENT_GUIDELINES.md)
+- [Code Review Checklist](./docs/CODE_REVIEW_CHECKLIST.md)
+- [Testing Strategy](./docs/TESTING_STRATEGY.md)
+- [Accessibility Guidelines](./docs/ACCESSIBILITY_GUIDELINES.md)
+- [Project Roadmap](./docs/PROJECT_ROADMAP.md)
+- [API Documentation](./docs/API_DOCUMENTATION.md)
+
+## Questions?
+
+If you have any questions about contributing, please:
+
+1. Check the documentation.
+2. Look for existing issues or discussions.
+3. Open a new discussion if your question is not addressed.
+4. Contact us at [contributors@cco-vibe.com](mailto:contributors@cco-vibe.com).
+
+Thank you for contributing to CCO! 
